@@ -26,7 +26,6 @@ const LogIn = () => {
                 history.replace(from);
             })
     }
-
     console.log(loggedInUser);
     return (
         <div className="text-center mt-4">
