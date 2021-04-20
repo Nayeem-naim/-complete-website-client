@@ -1,12 +1,17 @@
 import React from 'react';
+import About from '../../About/About';
+import Message from '../../Message/Message';
+import Review from '../../Review/Review';
+import Service from '../../Service/Service';
 import HomeMain from '../HomeMain/HomeMain';
-import Navbar from '../Navbar/Navbar';
-
 const Home = () => {
     return (
         <div>
-            <Navbar/>
             <HomeMain/>
+            <Service/>
+            <About></About>
+            <Review/>
+            <Message/>
         </div>
     );
 };

@@ -1,7 +1,4 @@
 import React from 'react';
-import image1 from '../../../images/daa0a774e717ef13a6d714104fb9b7d6.jpg'
-import image2 from '../../../images/milky-way-2695569_960_720.jpg'
-import image3 from '../../../images/modern-abstract-motion-banner-dark-background-colourful-light-76877365.jpg'
 
 const HomeMain = () => {
     return (
@@ -14,13 +11,13 @@ const HomeMain = () => {
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active " style={{height:'400px'}}>
-                        <img src={image1} class="d-block w-100" alt="..."/>
+                        <img src='https://i.ibb.co/s3SMGyc/image-one.jpg' class="d-block w-100" alt="..."/>
                         </div>
                         <div class="carousel-item " style={{height:'400px'}}>
-                        <img src={image2} class="d-block  w-100" alt="..."/>
+                        <img src='https://i.ibb.co/QCc8nXr/image-two-one.jpg' class="d-block  w-100" alt="..."/>
                             </div>
                             <div class="carousel-item" style={{height:'400px'}}>
-                                <img src={image3} class="d-block w-100" alt="..."/>
+                                <img src='https://i.ibb.co/R6dvWpR/image-tree.jpg' class="d-block w-100" alt="..."/>
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
