@@ -8,7 +8,7 @@ const Shipment = () => {
     const { shipmentId } = useParams();
     const [orderPlace,setOrderPlace] = useState({})
     useEffect(()=>{
-       fetch('http://localhost:5000/service')
+       fetch('https://hidden-brook-46366.herokuapp.com/service')
        .then(res => res.json())
        .then(data => {
         setOrderPlace(data.find(pd => pd._id === shipmentId))
@@ -30,7 +30,7 @@ const Shipment = () => {
             shipment: shipmentData,
             paymentId,
         }
-        const url = 'http://localhost:5000/addOrder';
+        const url = 'https://hidden-brook-46366.herokuapp.com/addOrder';
         fetch(url, {
             method: 'POST',
             headers: { 'content-type': 'application/json' },

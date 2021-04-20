@@ -7,7 +7,7 @@ const Order = () => {
     const {orderId} = useParams();
     const [orders,setOrders] = useState({})
     useEffect(()=>{
-           fetch('http://localhost:5000/service')
+           fetch('https://hidden-brook-46366.herokuapp.com/service')
            .then(res => res.json())
            .then(data => {
             setOrders(data.find(pd => pd._id === orderId))

@@ -12,7 +12,7 @@ const AddService = () => {
         imageURL : image
       }
       console.log(serviceData);
-      const url ='http://localhost:5000/addService';
+      const url ='https://hidden-brook-46366.herokuapp.com/addService';
     fetch(url,{
       method: 'POST',
       headers:{'content-type':'application/json'},

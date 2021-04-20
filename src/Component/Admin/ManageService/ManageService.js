@@ -2,14 +2,14 @@ import React, { useEffect, useState } from 'react';
 
 const ManageService = () => {
     const [services,setServices] = useState([])
-    const url = 'http://localhost:5000/service'
+    const url = 'https://hidden-brook-46366.herokuapp.com/service'
     useEffect(()=>{
          fetch(url)
          .then(res =>res.json())
          .then(data => setServices(data))
     },[])
     const deleteProduct = (id)=>{
-        fetch(`http://localhost:5000/deleteProduct/${id}`, {
+        fetch(`https://hidden-brook-46366.herokuapp.com/deleteProduct/${id}`, {
                 method: 'DELETE'
             })
                 .then(result => {

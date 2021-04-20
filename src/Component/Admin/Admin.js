@@ -14,9 +14,9 @@ import ManageService from './ManageService/ManageService';
 
 const Admin = () => {
   const [loggedInUser] = useContext(UserContext)
-  const [isAdmin,setIsAdmin] = useState(true)
+  const [isAdmin,setIsAdmin] = useState(false)
   useEffect(()=>{
-    fetch('http://localhost:3000/isAdmin',{
+    fetch('https://hidden-brook-46366.herokuapp.com/isAdmin',{
       method:'POST',
       headers:{'content-type': 'application/json'},
       body: JSON.stringify({email: loggedInUser.email})

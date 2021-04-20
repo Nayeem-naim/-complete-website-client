@@ -4,7 +4,7 @@ import ServiceDetails from './ServiceDetails/ServiceDetails';
 
 const Service = () => {
     const [services,setServices] = useState([])
-    const url = 'http://localhost:5000/service'
+    const url = 'https://hidden-brook-46366.herokuapp.com/service'
     useEffect(()=>{
          fetch(url)
          .then(res =>res.json())

@@ -8,7 +8,7 @@ const AddReview = () => {
         name: data.name,
         price: data.message
       }
-    const url = 'http://localhost:5000/addReview';
+    const url = 'https://hidden-brook-46366.herokuapp.com/addReview';
     fetch(url, {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
